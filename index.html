@@ -22,27 +22,37 @@
         <a class="link-nav">Cinema Anni '80</a>
         <a class="link-nav">Chi Siamo?</a>
     </nav>
-    <!-- FINE MODAL HTML -->
+    <!-- INIZIO MODAL HTML -->
     <div id="modal">
         <div class="modal-overlay">
             <div class="modal-content">
                 <a href="#" class="close-btn"> &times; </a>
                 <div class="form-container">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-                    <br>
-                    <button type="submit" href=""> Invia! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
-                    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                    Lavora Con Noi
+                <form action="#" method="POST" onsubmit="alert('Grazie di averci contattato'); return false">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                    <label for="password" class="form-label">Password:</label>
+                    <input type="password" id="password" name="password" class="form-control" required>
+                
+                    
+                <br>
+
+
+                    <button type="submit" href="" > Invia! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
                     </svg>
                     </button>
-                    </form>
+                </form>
+            
+                    <div id="confirmation-message" style="display: none;">
+                    <p>Grazie di averci contattato!</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- INIZIO MODAL HTML -->
+    <!--FINE MODAL HTML -->
     <header class="bg-primary">
         <h1>CINEMA ITALIANO VERO</h1>
     </header>
@@ -51,7 +61,7 @@
         <section class="custom-cntr">
                 <div class="custom-col">
                     <h4>Benvenuti al sud</h4>
-                    <a href=""><img src="https://picsum.photos/250/150" alt=""></a>
+                    <a href="https://www.rottentomatoes.com" target="_blank"><img src="https://picsum.photos/250/150" alt=""></a>
                     <p class="p">
                         Descrizione: Alberto, un direttore delle
                         Poste, viene trasferito nel Sud Italia. 
@@ -64,7 +74,7 @@
                 
                 <div class="custom-col">
                     <h4>Benvenuti al Nord</h4>
-                    <img src="https://picsum.photos/250/150" alt="">
+                    <a href="https://www.rottentomatoes.com" target="_blank"><img src="https://picsum.photos/250/150" alt=""></a>
                     <p class="p">
                         Dopo il Sud, Mattia si trasferisce a Milano per lavoro.
                         Immerso nel ritmo frenetico del Nord, dovrà adattarsi alle nuove regole
@@ -75,7 +85,7 @@
 
                 <div class="custom-col">
                     <h4>La Vita è Bella</h4>
-                    <img src="https://picsum.photos/250/150" alt="">
+                    <a href="https://www.rottentomatoes.com" target="_blank"><img src="https://picsum.photos/250/150" alt=""></a>
                     <p class="p">
                         Durante la Seconda Guerra Mondiale, Guido, un ebreo italiano, usa 
                         la fantasia per proteggere il figlio Giosuè dagli orrori del 
@@ -91,13 +101,12 @@
         <h3>P.IVA: <p>23421343324</p></h3>
         <h3>INFO PROPRIETARIO DEL BLOG:<p>Simpatico bello e carismatico</p></h3>
         <h3>LINK SOCIAL DEL BLOG:
-             
-            <p>
-                <svg class="ig" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                </svg><a href="">@fabjettoo</a>
-
-            </p>
+                
+                <p>
+                    <svg class="ig" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                    </svg><a href="">@fabjettoo</a>
+                </p>
         
         </h3>
     </footer>
