@@ -16,43 +16,12 @@
 </head>
 <body>
     <nav>
-        <a href="#modal" class="open-modal-btn">Lavora Con Noi</a>
+        <a class="link-nav">Grandi classici</a>
         <a class="link-nav">Serie TV</a>
         <a class="link-nav">Film</a>
         <a class="link-nav">Cinema Anni '80</a>
         <a class="link-nav">Chi Siamo?</a>
     </nav>
-    <!-- INIZIO MODAL HTML -->
-    <div id="modal">
-        <div class="modal-overlay">
-            <div class="modal-content">
-                <a href="#" class="close-btn"> &times; </a>
-                <div class="form-container">
-                    Lavora Con Noi
-                <form action="#" method="POST" onsubmit="alert('Grazie di averci contattato'); return false">
-                    <label for="email" class="form-label">Email:</label>
-                    <input type="email" id="email" name="email" class="form-control" required>
-                    <label for="password" class="form-label">Password:</label>
-                    <input type="password" id="password" name="password" class="form-control" required>
-                
-                    
-                <br>
-
-
-                    <button type="submit" href="" > Invia! <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
-                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
-                    </svg>
-                    </button>
-                </form>
-            
-                    <div id="confirmation-message" style="display: none;">
-                    <p>Grazie di averci contattato!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--FINE MODAL HTML -->
     <header class="bg-primary">
         <h1>CINEMA ITALIANO VERO</h1>
     </header>
@@ -109,8 +78,45 @@
                 </p>
         
         </h3>
+        <form>
+            <h2>Lavora Con Noi!</h2>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">La tua mail non sarà condivisa con nessuno.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="submit" class="btn btn-primary">Submit</button>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                        Grazie di averci contattato!
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    ...
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </form>
     </footer>
 
-    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
